@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. 
+      I am a results-driven Product Manager at the intersection of data mastery and strategic innovation. 
+      With a background spanning Data Analysis, Data Science, and Data Engineering, I bring a potent blend of insights and technical acumen to drive product excellence. 
+      Explore my impactful projects, delve into my open-source contributions, and unleash the potential of collaborative success. For inquiries or bold collaborations. 
+      I invite you to connect with me. Let's shape the future of innovation together."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Agy Aldira's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. 
+I am a results-driven Product Manager at the intersection of data mastery and strategic innovation. 
+With a background spanning Data Analysis, Data Science, and Data Engineering, I bring a potent blend of insights and technical acumen to drive product excellence. 
+Explore my impactful projects, delve into my open-source contributions, and unleash the potential of collaborative success. For inquiries or bold collaborations. 
+I invite you to connect with me. Let's shape the future of innovation together.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.jpeg">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://ossportfolio.netlify.app">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agy Aldira's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. 
+I am a results-driven Product Manager at the intersection of data mastery and strategic innovation. 
+With a background spanning Data Analysis, Data Science, and Data Engineering, I bring a potent blend of insights and technical acumen to drive product excellence. 
+Explore my impactful projects, delve into my open-source contributions, and unleash the potential of collaborative success. For inquiries or bold collaborations. 
+I invite you to connect with me. Let's shape the future of innovation together.">
+
+<!-- Reference screenshot of updated site's header in content -->
+<meta property="og:image" content="assets/images/sharing-card.jpeg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agy Aldira's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. 
+I am a results-driven Product Manager at the intersection of data mastery and strategic innovation. 
+With a background spanning Data Analysis, Data Science, and Data Engineering, I bring a potent blend of insights and technical acumen to drive product excellence. 
+Explore my impactful projects, delve into my open-source contributions, and unleash the potential of collaborative success. For inquiries or bold collaborations. 
+I invite you to connect with me. Let's shape the future of innovation together.">
+
+<meta name="twitter:image" content="assets/images/sharing-card.jpeg">
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/logos.png"
+      type="image/png"
+    />
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Agy Aldira's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container" style="display: none;">
+        <div class="container">
+          <a href="http://linkedin.com/in/agyaldira14/" target="_blank" rel="noopener" class="menu-btn">Resume</a>
+          <button type="button" class="menu-btn">Resume</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Work</a></li>
+          <li class="nav-item"><a href="#blog">See Blog</a></li>
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            Hi, I'm Agy Aldira<br />
+            Product Manager
+          </h1>
+
+          <p class="header-text">
+            A dynamic Product Manager who specializing in seamless user experiences 
+            to drive excellence and exceed expectations. 
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="https://drive.google.com/uc?export=download&id=1d7AIWriZXm0nbSALkAVggqaA74742bH0" download="resume.pdf" class="btn btn-secondary">Resume</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="client">
+        <div class="container">
+          <h2 class="h2">Experience</h2>
+          <div class="logos">
+            <div class="logo-group">
+              <a href="https://goto-impact.org/generasi-gigih/" target="_blank" rel="noopener"></a>
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/gengigih-logo.png"
+                alt="Generasi GIGIH"
+                class="logo"
+              /></a>
+              <span class="logo-text">Data Analyst</span>
+            </div>
+          
+            <div class="logo-group">
+              <a href="https://www.beraucoalenergy.co.id" target="_blank" rel="noopener"></a>
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/berau.png"
+                alt="Berau Coal"
+                class="logo"
+              /></a>
+              <span class="logo-text">Data Scientist</span>
+            </div>
+          
+            <div class="logo-group">
+              <a href="https://netmonk.id" target="_blank" rel="noopener"></a>
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/netmonk.png"
+                alt="Netmonk"
+                class="logo adjust-logo"
+              /></a>
+              <span class="logo-text">Data Engineer | Product Owner</span>
+            </div>
+          
+            <div class="logo-group">
+              <a href="https://mydigitalacademy.id" target="_blank" rel="noopener"></a>
+              <img
+                loading="lazy"
+                src="assets/images/trusted-by/mandiri.svg.png"
+                alt="Mandiri"
+                class="logo"
+              /></a>
+              <span class="logo-text">Product Manager</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+                <a href="https://jira.atlassian.com" target="_blank" rel="noopener">
+                  <img src="assets/images/skills/jira.svg.png" alt="React" class="skills-img" loading="lazy" title="React">
+                </a>
+                <a href="https://trello.com" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/trello.svg.png" alt="Svelte" class="skills-img" loading="lazy" title="Svelte">
+                </a>
+                <a href="https://slack.com/intl/en-gb/" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/slack.svg.png" alt="Typescript" class="skills-img" loading="lazy" title="Typescript">
+                </a>
+                <a href="https://about.gitlab.com" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/gitlab.svg.png" alt="Accessibility" class="skills-img" loading="lazy" title="Web Accessibility">
+                </a>
+                <a href="https://www.python.org" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/python.svg.png" alt="Shell" class="skills-img" loading="lazy" title="Shell">
+                </a>
+                <a href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/r.png" alt="NextJS" class="skills-img" loading="lazy" title="NextJS">
+                </a>
+                <a href="https://airflow.apache.org" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/airflow.png" alt="Graph Ql" class="skills-img" loading="lazy" title="Graph QL">
+                </a>
+                <a href="https://www.figma.com" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/figma.svg.png" alt="Git" class="skills-img" loading="lazy" title="Git">
+                </a>
+                <a href="https://dbeaver.io" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/DBeaver_logo.svg.png" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+                </a>
+                <a href="https://www.tableau.com" target="_blank" rel="noopener">
+                 <img src="assets/images/skills/tableau.png" alt="JavaScript" class="skills-img" loading="lazy" title="JavaScript">
+                </a>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="h2">Testimonials</h2>
+        <div class="container">
+          <ol class="testimonials">
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Blablablablablablablablablabla, blablablablablabla
+                blablablablablablablablabla. Blablablablablablablablabla blablablablablabla.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/rich-harris.png"
+                  alt="Rich Harris"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Blabla bla</h3>
+                  <p class="testimonial-author-job">CEO @Blabla bla</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Blablablablablablablablablabla, blablablablablabla
+                blablablablablablablablabla. Blablablablablablablablabla blablablablablabla.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/frank-mcsherry.webp"
+                  alt="Andrew Mead"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Blabla bla</h3>
+                  <p class="testimonial-author-job">COO @Blabla bla
+                  </p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Blablablablablablablablablabla, blablablablablabla
+                blablablablablablablablabla. Blablablablablablablablabla blablablablablabla.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/brian-hirsh.png"
+                  alt="Brian Hirsh"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Blabla bla</h3>
+                  <p class="testimonial-author-job">Director @Blabla bla</p>
+                </figcaption>
+              </figure>
+            <!-- </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Syed is a true professional with amazing talent. He is a creative
+                thinker, has his finger on the pulse of whats to come, and
+                absolutely one of the quickest and best problem solvers I have
+                ever met.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/adam.png"
+                  alt="Adam Argalye"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Adam Argalye</h3>
+                  <p class="testimonial-author-job">SWE @Google</p>
+                </figcaption>
+              </figure> -->
+            <!-- </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+               Syed is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption. 
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/val-head.png"
+                  alt="Val Head"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Val Head</h3>
+                  <p class="testimonial-author-job">CEO @Engines</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="testimonial">
+              <blockquote class="testimonial-text">
+                Syed is a talented artist. He is very experienced with various
+                media and can make any project you are working on look good. He is
+                easy to work with and is a self starter. I would work with Syed
+                again.
+              </blockquote>
+              <figure class="testimonial-author">
+                <img
+                  src="assets/images/testimonials/tim-satterwhite.webp"
+                  alt="Gary Simon"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h3 class="testimonial-author-name">Gary Simon</h3>
+                  <p class="testimonial-author-job">A11y Advocate @W3C</p>
+                </figcaption>
+              </figure>
+            </li> -->
+          </ol>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                As a Product Manager, I am passionate about creating products that solve 
+                real-world problems and deliver value to customers with customer-centric.
+              </p>
+              <p class="contact-text">
+                I have a proven track record of delivering successful products that have resulted 
+                in increased revenue and customer satisfaction.
+              </p>
+              <img
+                src="assets/images/ttd agy hd.png"
+                alt="signatures"
+                class="invert-color signatures"
+                style="width: 80px; height: 120px;"/>
+            </div>
+            <form class="contact-form" netlify data-netlify="true" data-netlify-honeypot="bot-field">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" adjust-height required></textarea>
+              </div>
+              <script>
+                const textarea = document.getElementById('message');
+                textarea.addEventListener('input', function () {
+                  this.style.height = 'auto';
+                  this.style.height = (this.scrollHeight) + 'px';
+                });
+              </script>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <nav>
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="http://github.com/agyaldira" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                    />
+              </a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="http://linkedin.com/in/agyaldira14/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                />
+              </a>
+              </li>
+            </ol>
+          </nav>
+          <p class="footer-text">
+            &copy; <span>2024</span> - All Rights Reserved by <a target="_blank" rel="noopener" href="http://linkedin.com/in/agyaldira14/">Ahmad Taqiy Aldira Putra</a>
+          </p>
+          <label class="theme-switch" for="theme-switch">
+            <span>Dark Theme</span>
+            <input type="checkbox" id="theme-switch" role="switch"/>
+          </label>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
