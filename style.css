@@ -283,7 +283,7 @@ h3,
 .btn-cta {
   color: var(--bg-color-primary);
   background-color: var(--important);
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 body.dark .btn-cta:hover,
@@ -297,9 +297,9 @@ body.light .btn-cta:focus {
 }
 
 .btn-secondary {
-  border: 1px solid var(--border-dark);
+  border: 3px solid var(--border-dark);
   color: var(--important);
-  margin-top: 70px;
+  margin-top: 30px;
 }
 
 .btn-secondary:hover,
@@ -485,17 +485,17 @@ main {
 
 body.dark .header {
   background-image: linear-gradient(#00000078, #000000e6),
-    url("assets/images/wallpaper6.jpeg");
+    url("assets/images/wallpaper-dark.jpeg");
 }
 
 body.light .header {
   background-image: linear-gradient(#ffffffa2, #fffffff6),
-    url("assets/images/wallpaper4.jpg");
+    url("assets/images/wallpaper-light.jpg");
 }
 
 .header-textbox {
   position: absolute;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
 }
 
