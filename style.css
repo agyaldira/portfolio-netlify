@@ -541,12 +541,51 @@ body.light .header-text{
 }
 
 /* --------------------------------- */
+/* ----- Carousel -----*/
+/* --------------------------------- */
+
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  scroll-behavior: auto;
+  gap: 1.2rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.carousel-add{
+  margin-top: 50px;
+}
+
+.card {
+  width: 500px;
+  height: 300px;
+  background-color: #5eb8ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --------------------------------- */
 /* ----- Clients -----*/
 /* --------------------------------- */
 
+
+.skills-img {
+  block-size: 135px;
+  inline-size: 135px;
+}
+
 .logo-group {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .logo {
@@ -568,17 +607,10 @@ body.light .header-text{
 
 .logos {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: var(--gutter-x-large);
   padding-block-start: var(--gutter-x-large);
-}
-
-@media (max-width: 885px) {
-  .logos {
-    padding-block-start: calc(
-      var(--gutter-x-large) + var(--gutter-x-large) - 2rem
-    );
-  }
 }
 
 .logo-group {
@@ -592,8 +624,8 @@ body.light .header-text{
 
 .logo {
   /* position:absolute; */
-  max-block-size: 60px;
-  max-inline-size: 150px;
+  max-block-size: 135px;
+  max-inline-size: 130px;
   transition: all 2.4s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
@@ -601,19 +633,34 @@ body.light .header-text{
   margin-top: 20px;
 }
 
-@media (max-width: 845px) {
-  .logo {
-    max-inline-size: 100px;
-  }
-
-  .logo-group:last-child {
-    display: none;
+@media (max-width: 1100px) {
+  .skills-img {
+    block-size: 100px;
+    inline-size: 100px;
   }
 }
 
-@media (max-width: 400px) {
-  .logo {
-    max-inline-size: 85px;
+@media (max-width: 810px) {
+  .skills-img {
+    block-size: 85px;
+    inline-size: 85px;
+  }
+}
+
+@media (max-width: 675px) {
+  .skills-imgs {
+    gap: var(--gutter-large);
+  }
+  .skills-img {
+    block-size: 70px;
+    inline-size: 70px;
+  }
+}
+
+@media (max-width: 340px) {
+  .skills-img {
+    block-size: 55px;
+    inline-size: 55px;
   }
 }
 
@@ -1314,3 +1361,64 @@ input:checked {
   background-color: var(--track-active);
 }
 
+button{
+  width: 200px;
+  height: 80px;
+  border: none;
+  outline: none;
+  background: #2f2f2f;
+  color: #fff;
+  font-size: 22px;
+  border-radius: 40px;
+  text-align: center;
+  box-shadow: 0 6px 20px -5px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.check-box{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  box-shadow: 0 0 12px -2px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  right: 40px;
+  opacity: 0;
+}
+
+.check-box svg{
+  width: 40px;
+  margin: 20px;
+}
+
+svg path{
+  stroke-width: 3;
+  stroke: #fff;
+  stroke-dasharray: 34;
+  stroke-dashoffset: 34;
+  stroke-linecap: round;
+}
+
+.active{
+  background: #28c67c;
+  transition: 1s;
+}
+
+.active .check-box{
+  right: 0;
+  opacity: 1;
+  transition: 1s;
+}
+
+.active p{
+  margin-right: 125px;
+  transition: 1s;
+}
+
+.active svg path{
+  stroke-dashoffset: 0;
+  transition: 1s;
+  transition-delay: 1s;
+}
